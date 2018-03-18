@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("img/background.png");
+  background-size: 100% 110%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Outer*/
+#outer-wrapper{
+  background:#555;
+  width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  color:#ffffff;
+}
+.outer-artikel{
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.outer-tengah{
+  text-align: center;
+}
+/*Menu*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 800px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #0066ff;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+a.btn-download1{
+  text-decoration: none;
+  color: white;
+}
+button#show-link a{color: #cccccc;text-decoration: none;}
+button#show-link{
+  border: none;
+  background-color: #111111;
+  color: #cccccc;
+  padding: 5px 10px;
+}
+#link-inti{display:none}
+a.btn-download{
+  display: inline-block;
+  margin: 10px 0;
+  text-decoration: none;
+  background-color: #0066ff;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 2px 0px #0099ff
+}
+.iklan-atas{display: block;overflow: hidden;}
+.iklan-atas iframe{display: inline-block;margin: 0 auto;}
+.iklan-bottom{display: block;overflow: hidden;}
+.iklan-bottom iframe{display: inline-block;margin: 0 auto;}
+@media screen and (max-width: 600px) {
+  #outer-wrapper{width: 100%;margin: 0;overflow: hidden!important;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .iklan-atas{width:100%!important;overflow: hidden;}
+  .iklan-atas iframe{width: 100%!important;overflow: hidden;}
+}
+
+@media screen and (max-width: 600px) {
+  .topnav{width:100%;margin: 0;padding: 0;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
